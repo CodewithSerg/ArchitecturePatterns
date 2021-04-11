@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MVPViewController" customModule="MVPLesson" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who will go to the shop" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heb-hg-DKp">
+                                <rect key="frame" x="33" y="274" width="348" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgU-hD-Xdx">
+                                <rect key="frame" x="61" y="427" width="292" height="42"/>
+                                <color key="backgroundColor" red="0.73778116979999997" green="0.91248862779999995" blue="0.96478383820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Click and you will know this"/>
+                                <connections>
+                                    <action selector="didPressedButtonObtainName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CmO-fL-4uC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="heb-hg-DKp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="M9R-1c-K4I"/>
+                            <constraint firstItem="ZgU-hD-Xdx" firstAttribute="top" secondItem="heb-hg-DKp" secondAttribute="bottom" constant="111" id="gpX-eb-ygh"/>
+                            <constraint firstItem="ZgU-hD-Xdx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uDa-xR-JrO"/>
+                            <constraint firstItem="ZgU-hD-Xdx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ujo-u5-bbQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelName" destination="heb-hg-DKp" id="OqF-ph-Dcb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="zAo-Dh-Det" customClass="MVPConfig" customModule="MVPLesson" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="BYZ-38-t0r" id="qqW-fe-yWH"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
